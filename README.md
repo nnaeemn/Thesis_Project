@@ -13,4 +13,5 @@ In this project we compare recommender systems based on CF, on GRU fitted with B
 
 
 [1] Balazs Hidasi, and Alexandros Karatzoglou. 2018. Recurrent Neural Networks with Top-k Gains for Session-based Recommendations.
+
 [2]Renjie Liao, Yuwen Xiong, Ethan Fetaya, Lisa Zhang, KiJung Yoon, Xaq Pitkow, Raquel Urtasum, and Richard Zemel. 2018. Reviving and Improving Recurrent Back-Propagation. 
