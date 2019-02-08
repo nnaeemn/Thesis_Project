@@ -10,32 +10,6 @@ import numpy as np
 import pandas as pd
 
 class ItemKNN:
-    '''
-    ItemKNN(n_sims = 100, lmbd = 20, alpha = 0.5, session_key = 'SessionId', item_key = 'ItemId', time_key = 'Time')
-    
-    Item-to-item predictor that computes the the similarity to all items to the given item.
-    
-    Similarity of two items is given by:
-    
-    .. math::
-        s_{i,j}=\sum_{s}I\{(s,i)\in D & (s,j)\in D\} / (supp_i+\\lambda)^{\\alpha}(supp_j+\\lambda)^{1-\\alpha}
-        
-    Parameters
-    --------
-    n_sims : int
-        Only give back non-zero scores to the N most similar items. Should be higher or equal than the cut-off of your evaluation. (Default value: 100)
-    lmbd : float
-        Regularization. Discounts the similarity of rare items (incidental co-occurrences). (Default value: 20)
-    alpha : float
-        Balance between normalizing with the supports of the two items. 0.5 gives cosine similarity, 1.0 gives confidence (as in association rules).
-    session_key : string
-        header of the session ID column in the input file (default: 'SessionId')
-    item_key : string
-        header of the item ID column in the input file (default: 'ItemId')
-    time_key : string
-        header of the timestamp column in the input file (default: 'Time')
-    
-    '''    
     
     def __init__(self, n_sims = 100, lmbd = 20, alpha = 0.5, session_key = 'SessionId', item_key = 'ItemId', time_key = 'Time'):
         self.n_sims = n_sims
